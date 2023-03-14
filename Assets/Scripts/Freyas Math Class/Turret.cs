@@ -11,7 +11,6 @@ public class Turret : MonoBehaviour
     private void OnDrawGizmos()
     {
         Vector3 vecToTarget = target.position - cannonTf.position;
-        Quaternion targetRotation;
 
         //Note: World space
         if (wedgeTrigger.Contains(target.position))

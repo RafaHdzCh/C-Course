@@ -5,7 +5,7 @@ using UnityEngine;
 public class Strings : MonoBehaviour
 {
     string label;
-    string name = "Name";
+    string stringName = "Name";
     int score = 100;
 
     [SerializeField] StringsAndParameters stringsAndParametersScript;
@@ -13,7 +13,7 @@ public class Strings : MonoBehaviour
     private void Start()
     {
       //label = "Name Score:100"
-        label = $"{name} Score:{score}"; //text = "Name Score:100"
+        label = $"{stringName} Score:{score}"; //text = "Name Score:100"
         stringsAndParametersScript.HighScore(name, score);
     }
 

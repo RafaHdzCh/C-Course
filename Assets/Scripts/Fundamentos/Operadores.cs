@@ -36,6 +36,9 @@ public class Operadores : MonoBehaviour
         boolean = 2 == 2 && 4 == 4;
               //Invertir(condicion)
         boolean = !(2 == 2);
-
+        if(boolean)
+        {
+            boolean = false;
+        }
     }
 }
